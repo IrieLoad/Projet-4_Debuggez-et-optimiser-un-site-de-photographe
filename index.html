@@ -4,7 +4,7 @@
 	<meta charset="UTF-8"> <!-- Positionnement de la balise charset en premier pour un encodage correct -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Ajout d'une description -->
-	<meta name="description" content="Photographe professionnelle à Bordeaux, Nina Carducci capture les moments précieux avec passion et expertise.">
+	<meta name="description" content="Photographe professionnelle à Bordeaux, Nina Carducci immortalise vos mariages, portraits, et événements d'entreprise avec passion. Découvrez des photos inoubliables.">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,12 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
-	<title>Nina Carducci - Photographe à Bordeaux</title>
+	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
 </head>
 <body>
 	<header> <!-- Ajout de la balise sémantique <header> + suppression de la class .top-header-->
-		<h1 class="name">Nina Carducci</h1> <!-- Changement de <h3> en <h1> -->
+		<!-- Changement de <h3> en <h1> + ajout de la profession -->
+		<h1 class="name">Nina CARDUCCI <span>Photographe professionnelle</span></h1> 
 		<nav class="nav"> <!-- Remplacement de la <div> par la balise <nav> + conservation volontaire de la classe .nav -->
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -78,16 +79,16 @@
 			<article id="about-me">  <!-- Changement de la div id="about-me" en article -->
 				<!-- Changement de <h3> en <h2> -->
 				<!-- Uniformisation de la convention de nommage des class/id -->
-				<h2 class="about-me-title">A propos de moi</h2> 
+				<h2 class="about-me-title">A propos de moi : Nina Carducci</h2> <!-- Légère modification du tritre pour inclure des mots clés -->
 				<!-- Changement de <h6> en <p> -->
 				<!-- Uniformisation de la convention de nommage des class/id -->
-				<p class="about-me-introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+				<p class="about-me-introduction">Devenir photographe professionnelle était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 				<p class="about-me-describe">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+				C’est ce que je vous propose à travers ma passion pour la photographie : saisir ces merveilleux moments avec mon regard, mon expertise, et ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</article>
 		</section>
 		<section id="gallery-section"> <!-- Changement de la div id="gallery" en section + modification de l'id en gallery-section pour éviter la confusion avec la class l.91-->
-			<h2 class="title">Portfolio</h2> <!-- Changement de <h3> en <h2> -->
+			<h2 class="title">Mon portfolio de shootings</h2> <!-- Changement de <h3> en <h2> + Légère modification du tritre pour inclure des mots clés -->
 			<div class="container py-3">
 				<div class="gallery"> <!-- Suppression des propriétés CSS inline -->
 					<!-- Ajout de textes alternatifs pour les images -->
@@ -113,7 +114,8 @@
 			</blockquote>
 		</section>
 		<section id="services"> <!-- Changement de la div id="services" en section -->
-			<h2 class="title">Mes services</h2> <!-- Changement de <h3> en <h2> -->
+			<!-- Légère modification du tritre pour inclure des mots clés -->
+			<h2 class="title">Mes prestations de photographie : ce que je vous propose</h2> <!-- Changement de <h3> en <h2> -->
 			<div class="container">
 				<article class="service"> <!-- Changement de la div class="service" en article -->
 					<div class="service-description"> <!-- Uniformisation de la convention de nommage des class/id -->
@@ -158,8 +160,10 @@
 		<section id="contact"> <!-- Changement de la div id="contact" en section -->
 			<div class="container">
 				<form class="form-container" action="#" method="post"> <!-- Changement de la div class="form-container" en form -->
-					<h3>Une question ? Une demande de devis ?</h3>
-					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+					<!-- Légère modification du tritre pour inclure des mots clés -->
+					<h3>Contacter votre photographe </h3> 
+					<p> Une question ? Une demande de devis ? <br> 
+						N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<label for="nom">Nom</label> <!-- Ajout de l'attribut for -->
 					<input type="text" name="nom" id="nom">
 					<label for="email">Email</label> <!-- Ajout de l'attribut for -->

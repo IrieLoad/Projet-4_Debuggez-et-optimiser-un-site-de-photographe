@@ -21,7 +21,13 @@ header {
 }
 
 header .name {
+	display: flex; /* Mise en forme du titre pour inclure les mots clés */
+	flex-direction: column; /* Mise en forme du h1 en colonne */
 	font-size: 26px;
+}
+
+header .name > span {
+	font-size: 20px;
 }
 
 .nav ul {
