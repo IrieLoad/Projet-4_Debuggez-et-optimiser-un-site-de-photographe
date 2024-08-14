@@ -4,7 +4,7 @@
 	<meta charset="UTF-8"> <!-- Positionnement de la balise charset en premier pour un encodage correct -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Ajout d'une description -->
-	<meta name="description" content="Photographe professionnelle Bordeaux, Nina Carducci capture les moments précieux avec passion et expertise. Découvrez son portfolio et ses services.">
+	<meta name="description" content="Photographe professionnelle à Bordeaux, Nina Carducci capture les moments précieux avec passion et expertise.">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,7 @@
 	<title>Nina Carducci - Photographe à Bordeaux</title>
 </head>
 <body>
-	<!-- Ajout de la balise sémantique <header> -->
-	<header> <!-- Suppression de la classe .top-header -->
+	<header> <!-- Ajout de la balise sémantique <header> + suppression de la class .top-header-->
 		<h1 class="name">Nina Carducci</h1> <!-- Changement de <h3> en <h1> -->
 		<nav class="nav"> <!-- Remplacement de la <div> par la balise <nav> + conservation volontaire de la classe .nav -->
 			<ul>
@@ -35,8 +34,7 @@
 		</nav>
 	</header>
 	<main> <!-- Ajout de la balise <main> -->
-		<section id="carousel"> <!-- Changement de la div id="header" en section + modification de l'id -->
-			<h2 class="visually-hidden">Galerie d'Images</h2> <!-- Ajout d'un titre caché pour respecter les bonnes pratiques de sémantique et d'accessibilité, et pour éviter les avertissements du validateur W3C. Ce titre est masqué visuellement mais reste accessible aux lecteurs d'écran. -->
+		<section id="carousel" aria-label="Galerie d'Images"> <!-- Changement de la div id="header" en section + modification de l'id + ajout de l'attribut aria-label -->
 			<!-- Uniformisation de la convention de nommage des class/id -->
 			<div id="carousel-example-indicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -47,15 +45,15 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<!-- Ajout d'un texte alternatif pour l'image -->
-						<img src="./assets/images/slider/etape 4 _ images webp compressées/ryoji-iwata-wUZjnOv7t0g-unsplash_11zon.webp" class="d-block w-100" alt="Un homme en costume noir traverse un passage piéton avec des lignes blanches et noires, tenant un sac en cuir noir dans sa main gauche." loading="lazy">
+						<img src="./assets/images/slider/etape 4 _ images webp compressées/ryoji-iwata-wUZjnOv7t0g-unsplash_11zon.webp" class="d-block w-100" alt="Un homme en costume noir traverse un passage piéton, tenant un sac en cuir noir dans sa main gauche." loading="lazy">
 					</div>
 					<div class="carousel-item">
 						<!-- Ajout d'un texte alternatif pour l'image -->
-						<img src="./assets/images/slider/etape 4 _ images webp compressées/nicholas-green-nPz8akkUmDI-unsplash_11zon.webp" class="d-block w-100" alt="Un groupe de personnes, majoritairement des jeunes, expriment leur enthousiasme dans une foule lors d'un événement, avec certains levant les bras et d'autres souriant ou criant" loading="lazy">
+						<img src="./assets/images/slider/etape 4 _ images webp compressées/nicholas-green-nPz8akkUmDI-unsplash_11zon.webp" class="d-block w-100" alt="Un groupe de jeunes personnes, dans une foule lors d'un concert ou spectacle." loading="lazy">
 					</div>
 					<div class="carousel-item">
 						<!-- Ajout d'un texte alternatif pour l'image -->
-						<img src="./assets/images/slider/etape 4 _ images webp compressées/edward-cisneros-3_h6-1NPDGw-unsplash_11zon.webp" class="d-block w-100" alt="Un marié incline sa nouvelle épouse pour un baiser passionné au milieu d'une allée, tandis que les invités forment une haie et agitent des cierges étincelants, créant une atmosphère festive." loading="lazy">
+						<img src="./assets/images/slider/etape 4 _ images webp compressées/edward-cisneros-3_h6-1NPDGw-unsplash_11zon.webp" class="d-block w-100" alt="Un marié incline sa femme pour l'embrasser, tandis que les invités forment une haie d'honore." loading="lazy">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carousel-example-indicators" data-bs-slide="prev">
@@ -68,11 +66,10 @@
 				</button>
 			</div>
 		</section>
-		<section id="about"> <!-- Changement de la div id="about" en section -->
-			<h2 class="visually-hidden">A propos de moi</h2> <!-- Ajout d'un titre caché pour respecter les bonnes pratiques de sémantique et d'accessibilité, et pour éviter les avertissements du validateur W3C. Ce titre est masqué visuellement mais reste accessible aux lecteurs d'écran. -->
+		<section id="about" aria-label="Apropos de moi"> <!-- Changement de la div id="about" en section + ajout de l'attribut aria-label -->
 			<div class="picture left">
 				<!-- Ajout d'un texte alternatif pour l'image -->
-				<img src="./assets/images/profil/etape 4 _ images webp compressées/nina_11zon.jpg" alt="Portrait de Nina Carducci, jeune femme avec des cheveux bouclés noirs, portant une salopette en jean par-dessus un t-shirt rayé, posant avec une main touchant son visage, dans un environnement extérieur verdoyant." loading="lazy">
+				<img src="./assets/images/profil/etape 4 _ images webp compressées/nina_11zon.jpg" alt="Portrait de Nina Carducci, jeune femme aux cheveux bouclés en salopette, posant en extérieur." loading="lazy">
 			</div>
 			<article id="about-me">  <!-- Changement de la div id="about-me" en article -->
 				<!-- Changement de <h3> en <h2> -->
@@ -91,15 +88,15 @@
 				<div class="gallery"> <!-- Suppression des propriétés CSS inline -->
 					<!-- Ajout de textes alternatifs pour les images -->
 					<!-- Suppression de la barre oblique au chevron de fermeture de la balise img -->
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/etape 4 _ images webp compressées/aaron-paul-wnX-fXzB6Cw-unsplash_11zon.webp" alt="Scène de concert avec une lumière rouge éclatante illuminant la foule et le plafond circulaire de la salle, créant une ambiance énergique." loading="lazy">
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/ali-morshedlou-WMD64tMfc4k-unsplash_11zon.webp" alt="Portrait d'un homme en costume sombre, bras croisés, se tenant avec assurance dans un environnement urbain, avec un léger sourire" loading="lazy">
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/jason-goodman-tHO1_OuKbg0-unsplash_11zon.webp" alt="Une femme souriante participe à une réunion informelle dans un bureau lumineux, entourée de collègues. " loading="lazy">
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/etape 4 _ images webp compressées/hannah-busing-RvF2R_qMpRk-unsplash_11zon.webp" alt="Deux mains s'étendent l'une vers l'autre en plein air, capturant un moment intime et symbolique de connexion ou d'amour, avec un arrière-plan flou de ciel et de nature." loading="lazy">
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/etape 4 _ images webp compressées/ade-tunji-rVkhWWZFAtQ-unsplash_11zon.webp" alt="Portrait en gros plan d'un homme noir aux yeux fermés avec une barbe, la lumière du soleil illuminant son visage." loading="lazy">
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/etape 4 _ images webp compressées/jakob-owens-SiniLJkXhMc-unsplash_11zon.webp" alt="Un couple de jeunes mariés marchant main dans la main devant un grand palmier, souriant et riant ensemble, le marié en costume vert foncé et la mariée en robe blanche élégante avec un bouquet de fleurs" loading="lazy">
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/etape 4 _ images webp compressées/nino-van-prattenburg--443cl1uR_8-unsplash_11zon.webp" alt="Portrait d'une jeune femme portant des lunettes et un pull noir, regardant vers le bas, avec une clôture en arrière-plan flou" loading="lazy">
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/etape 4 _ images webp compressées/austin-neill-hgO1wFPXl3I-unsplash_11zon.webp" alt="Un chanteur sur scène tendant la main vers le ciel, entouré d'un nuage de fumée et d'éclats de lumière" loading="lazy">
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_11zon.webp" alt="Une femme souriante travaillant sur son ordinateur portable dans un bureau ensoleillé, avec une tasse à café à ses côtés et une petite statue dorée de la justice en arrière-plan." loading="lazy">
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/etape 4 _ images webp compressées/aaron-paul_11zon.webp" alt="Scène de concert avec une lumière rouge éclatante illuminant la foule et le plafond de la salle." loading="lazy">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/ali-morshedlou_11zon.webp" alt="Homme en costume sombre, bras croisés, dans un environnement urbain, avec un léger sourire" loading="lazy">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/jason-goodman_11zon.webp" alt="Femme souriante qui participe à une réunion informelle, entourée de collègues. " loading="lazy">
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/etape 4 _ images webp compressées/hannah-busing_11zon.webp" alt="Deux mains s'étendent l'une vers l'autre, avec un arrière-plan flou de ciel et de nature." loading="lazy">
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/etape 4 _ images webp compressées/ade-tunji_11zon.webp" alt="Portrait en gros plan d'un homme noir aux yeux fermés avec une barbe." loading="lazy">
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/etape 4 _ images webp compressées/jakob-owens_11zon.webp" alt="Couple de jeunes mariés souirant et marchant main dans la main devant un grand palmier." loading="lazy">
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/etape 4 _ images webp compressées/nino-van-prattenburg_11zon.webp" alt="Jeune femme portant des lunettes et un pull noir, regardant vers le bas, en extérieur." loading="lazy">
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/etape 4 _ images webp compressées/austin-neill_11zon.webp" alt="Chanteur sur scène tendant la main vers le ciel, entouré d'un nuage de fumée et d'éclats de lumière" loading="lazy">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/mateus-campos_11zon.webp" alt="Une femme souriante travaillant sur son ordinateur portable dans un bureau ensoleillé." loading="lazy">
 				</div>
 			</div>
 			<blockquote class="quote">
@@ -169,7 +166,7 @@
 				</form>
 				<div class="picture right">
 					<!-- Ajout d'un texte alternatif pour l'image -->
-					<img src="./assets/images/appareil photo/etape 4 _ images webp compressées/camera_11zon.webp" alt="Photographie en gros plan d'un appareil photo Leica éclairé par une lumière chaude, mettant en valeur l'objectif et les détails de la texture métallique et en cuir du boîtier." loading="lazy"> 
+					<img src="./assets/images/appareil photo/etape 4 _ images webp compressées/camera_11zon.webp" alt="Photographie en gros plan d'un appareil photo Leica éclairé par une lumière chaude." loading="lazy"> 
 				</div>
 			</div>
 		</section>
