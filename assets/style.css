@@ -71,11 +71,11 @@ header .name {
 
 .picture img {
 	width: 100%;
-
+	height: auto;
 }
 
 #about-me {
-	flex: 2
+	flex: 2;
 }
 
 .about-me-title {
@@ -91,13 +91,16 @@ header .name {
 	width: 60%;
 }
 
-#about-me p {
+.about-me-describe {
 	width: 80%;
+  }
+
+.about-me-introduction, .about-me-describe {
 	font-size: 14px;
 }
 
 #gallery-section {
-	/*	min-height: 100vh; */
+	min-height: 100vh;
 }
 
 .title{
@@ -112,7 +115,7 @@ header .name {
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #807732;
-	border-radius:0 ;
+	border-radius: 0;
 }
 
 .nav-pills .nav-link {
@@ -166,7 +169,7 @@ header .name {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2.5rem;
 }
 
 .quote-author {
@@ -196,7 +199,6 @@ header .name {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -278,7 +280,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me .about-me-introduction, #about-me .about-me-describe {
 		width: 100%;
 	}
 }
@@ -310,7 +312,7 @@ input[type="submit"] {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
-		margin: 2em 0
+		margin: 2em 0;
 	}
 	.service-description{
 		margin-bottom: 1em;
@@ -372,6 +374,7 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+		object-fit: cover;
 	}
 }
 
