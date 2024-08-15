@@ -3,11 +3,28 @@
 <head>
 	<meta charset="UTF-8"> <!-- Positionnement de la balise charset en premier pour un encodage correct -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<!-- Ajout d'une description -->
 	<meta name="description" content="Photographe professionnelle à Bordeaux, Nina Carducci immortalise vos mariages, portraits, et événements d'entreprise avec passion. Découvrez des photos inoubliables.">
+	
+	<!-- Balises Meta Open Graph (pour une meilleure intégration sur Facebook)-->
+	<meta property="og:title" content="Nina Carducci - Photographe professionnelle - Bordeaux" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://irieload.github.io/Projet-4_Debuggez-et-optimiser-un-site-de-photographe/" />
+	<meta property="og:image" content="https://irieload.github.io/Projet-4_Debuggez-et-optimiser-un-site-de-photographe/assets/images/profil/3_format-webp/nina.webp/" />
+	<meta property="og:description" content="Photographe professionnelle à Bordeaux, Nina Carducci immortalise vos mariages, portraits, et événements d'entreprise avec passion. Découvrez des photos inoubliables." />
+	<meta property="og:site_name" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta property="og:locale" content="fr_FR" />
+
+	<!-- Balises Meta Twitter Card (pour une meilleure intégration sur Twitter) -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
+	<meta name="twitter:description" content="Photographe professionnelle à Bordeaux, Nina Carducci immortalise vos mariages, portraits, et événements d'entreprise avec passion. Découvrez des photos inoubliables.">
+	<meta name="twitter:image" content="https://irieload.github.io/Projet-4_Debuggez-et-optimiser-un-site-de-photographe/assets/images/profil/3_format-webp/nina.webp/">
+	
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com" defer>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	
 	<!-- Balise de préchargement de la police -->
@@ -15,11 +32,55 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
+	<!-- Ajout de l'attribut defer aux scripts pour différer leur chargement jusqu'à ce que le DOM soit complètement analysé, afin d'améliorer les performances de la page -->
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+	
+	<!-- Ajout de la balise <title> pour améliorer le référencement en définissant un titre spécifique pour la page -->
 	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
+	
+	<!-- Schema.org LocalBusiness Markup -->
+    <script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Photographer",
+		  "name": "Nina Carducci - Photographe professionnelle à Bordeaux",
+		  "description": "Photographe professionnelle à Bordeaux, Nina Carducci immortalise vos mariages, portraits, et événements d'entreprise avec passion.",
+		  "image": "https://irieload.github.io/Projet-4_Debuggez-et-optimiser-un-site-de-photographe/assets/images/profil/3_format-webp/nina.webp/",
+		  "url": "https://irieload.github.io/Projet-4_Debuggez-et-optimiser-un-site-de-photographe/",  
+		  "telephone": "+33556677889",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  "geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "44.837789",
+			"longitude": "-0.57918"
+		  },
+		  "openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+			  "Monday",
+			  "Tuesday",
+			  "Wednesday",
+			  "Thursday",
+			  "Friday"
+			],
+			"opens": "10:00",
+			"closes": "19:00"
+		  },
+		  "sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		  ]
+		}
+		</script>
+
 </head>
 <body>
 	<header> <!-- Ajout de la balise sémantique <header> + suppression de la class .top-header-->
@@ -50,15 +111,15 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<!-- Ajout d'un texte alternatif pour l'image -->
-						<img src="./assets/images/slider/etape 4 _ images webp compressées/ryoji-iwata_11zon.webp" class="d-block w-100" alt="Un homme en costume noir traverse un passage piéton, tenant un sac en cuir noir dans sa main gauche.">
+						<img src="./assets/images/slider/4_webp-compressées/ryoji-iwata_11zon.webp" class="d-block w-100" alt="Un homme en costume noir traverse un passage piéton, tenant un sac en cuir noir dans sa main gauche.">
 					</div>
 					<div class="carousel-item">
 						<!-- Ajout d'un texte alternatif pour l'image -->
-						<img src="./assets/images/slider/etape 4 _ images webp compressées/nicholas-green_11zon.webp" class="d-block w-100" alt="Un groupe de jeunes personnes, dans une foule lors d'un concert ou spectacle.">
+						<img src="./assets/images/slider/4_webp-compressées/nicholas-green_11zon.webp" class="d-block w-100" alt="Un groupe de jeunes personnes, dans une foule lors d'un concert ou spectacle.">
 					</div>
 					<div class="carousel-item">
 						<!-- Ajout d'un texte alternatif pour l'image -->
-						<img src="./assets/images/slider/etape 4 _ images webp compressées/edward-cisneros_11zon.webp" class="d-block w-100" alt="Un marié incline sa femme pour l'embrasser, tandis que les invités forment une haie d'honore.">
+						<img src="./assets/images/slider/4_webp-compressées/edward-cisneros_11zon.webp" class="d-block w-100" alt="Un marié incline sa femme pour l'embrasser, tandis que les invités forment une haie d'honore.">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carousel-example-indicators" data-bs-slide="prev">
@@ -74,7 +135,7 @@
 		<section id="about" aria-label="Apropos de moi"> <!-- Changement de la div id="about" en section + ajout de l'attribut aria-label -->
 			<div class="picture left">
 				<!-- Ajout d'un texte alternatif pour l'image -->
-				<img src="./assets/images/profil/etape 4 _ images webp compressées/nina_11zon.jpg" alt="Portrait de Nina Carducci, jeune femme aux cheveux bouclés en salopette, posant en extérieur.">
+				<img src="./assets/images/profil/4_webp-compressées/nina_11zon.jpg" alt="Portrait de Nina Carducci, jeune femme aux cheveux bouclés en salopette, posant en extérieur.">
 			</div>
 			<article id="about-me">  <!-- Changement de la div id="about-me" en article -->
 				<!-- Changement de <h3> en <h2> -->
@@ -93,15 +154,15 @@
 				<div class="gallery"> <!-- Suppression des propriétés CSS inline -->
 					<!-- Ajout de textes alternatifs pour les images -->
 					<!-- Suppression de la barre oblique au chevron de fermeture de la balise img -->
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/etape 4 _ images webp compressées/aaron-paul_11zon.webp" alt="Scène de concert avec une lumière rouge éclatante illuminant la foule et le plafond de la salle." loading="lazy">
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/ali-morshedlou_11zon.webp" alt="Homme en costume sombre, bras croisés, dans un environnement urbain, avec un léger sourire" loading="lazy">
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/jason-goodman_11zon.webp" alt="Femme souriante qui participe à une réunion informelle, entourée de collègues. " loading="lazy">
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/etape 4 _ images webp compressées/hannah-busing_11zon.webp" alt="Deux mains s'étendent l'une vers l'autre, avec un arrière-plan flou de ciel et de nature." loading="lazy">
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/etape 4 _ images webp compressées/ade-tunji_11zon.webp" alt="Portrait en gros plan d'un homme noir aux yeux fermés avec une barbe." loading="lazy">
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/etape 4 _ images webp compressées/jakob-owens_11zon.webp" alt="Couple de jeunes mariés souirant et marchant main dans la main devant un grand palmier." loading="lazy">
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/etape 4 _ images webp compressées/nino-van-prattenburg_11zon.webp" alt="Jeune femme portant des lunettes et un pull noir, regardant vers le bas, en extérieur." loading="lazy">
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/etape 4 _ images webp compressées/austin-neill_11zon.webp" alt="Chanteur sur scène tendant la main vers le ciel, entouré d'un nuage de fumée et d'éclats de lumière" loading="lazy">
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/etape 4 _ images webp compressées/mateus-campos_11zon.webp" alt="Une femme souriante travaillant sur son ordinateur portable dans un bureau ensoleillé." loading="lazy">
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/4_webp-compressées/aaron-paul_11zon.webp" alt="Scène de concert avec une lumière rouge éclatante illuminant la foule et le plafond de la salle." loading="lazy">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/4_webp-compressées/ali-morshedlou_11zon.webp" alt="Homme en costume sombre, bras croisés, dans un environnement urbain, avec un léger sourire" loading="lazy">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/4_webp-compressées/jason-goodman_11zon.webp" alt="Femme souriante qui participe à une réunion informelle, entourée de collègues. " loading="lazy">
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/4_webp-compressées/hannah-busing_11zon.webp" alt="Deux mains s'étendent l'une vers l'autre, avec un arrière-plan flou de ciel et de nature." loading="lazy">
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/4_webp-compressées/ade-tunji_11zon.webp" alt="Portrait en gros plan d'un homme noir aux yeux fermés avec une barbe." loading="lazy">
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/4_webp-compressées/jakob-owens_11zon.webp" alt="Couple de jeunes mariés souirant et marchant main dans la main devant un grand palmier." loading="lazy">
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/4_webp-compressées/nino-van-prattenburg_11zon.webp" alt="Jeune femme portant des lunettes et un pull noir, regardant vers le bas, en extérieur." loading="lazy">
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/4_webp-compressées/austin-neill_11zon.webp" alt="Chanteur sur scène tendant la main vers le ciel, entouré d'un nuage de fumée et d'éclats de lumière" loading="lazy">
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/4_webp-compressées/mateus-campos_11zon.webp" alt="Une femme souriante travaillant sur son ordinateur portable dans un bureau ensoleillé." loading="lazy">
 				</div>
 			</div>
 			<blockquote class="quote">
@@ -174,7 +235,7 @@
 				</form>
 				<div class="picture right">
 					<!-- Ajout d'un texte alternatif pour l'image -->
-					<img src="./assets/images/appareil photo/etape 4 _ images webp compressées/camera_11zon.webp" alt="Photographie en gros plan d'un appareil photo Leica éclairé par une lumière chaude." loading="lazy"> 
+					<img src="./assets/images/appareil photo/4_webp-compressées/camera_11zon.webp" alt="Photographie en gros plan d'un appareil photo Leica éclairé par une lumière chaude." loading="lazy"> 
 				</div>
 			</div>
 		</section>
