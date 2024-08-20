@@ -8,7 +8,7 @@ body {
 	font-style: normal;
 }
 
-header {
+header { /* Suppression de la classe .top-header remplacée par la balise sémantique header */
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -20,14 +20,14 @@ header {
 	align-items: center;
 }
 
-header .name {
-	display: flex; /* Mise en forme du titre pour inclure les mots clés */
-	flex-direction: column; /* Mise en forme du h1 en colonne */
+header .name { /* Suppression de la classe .top-header remplacée par la balise sémantique header */
+	display: flex; /* Element ajouté */
+	flex-direction: column; /* Element ajouté */
 	font-size: 26px;
 }
 
-header .name > span {
-	font-size: 20px;
+header .name > span { /* Element ajouté + Suppression de la classe .top-header remplacée par la balise sémantique header */
+	font-size: 20px; /* Element ajouté */
 }
 
 .nav ul {
@@ -39,7 +39,7 @@ header .name > span {
 
 .nav li {
 	padding-inline: 10px;
-	cursor: pointer;
+	cursor: pointer; /* Element ajouté */
 }
 
 .nav a {
@@ -51,9 +51,9 @@ header .name > span {
 	width: 20px;
 }
 
-.w-100 {
-	height: 100% !important; /* Element ajouté */
-  }
+.w-100 { /* Element ajouté */
+	height: 100%; /* Element ajouté */
+}
 
 #about {
 	display: flex;
@@ -82,39 +82,37 @@ header .name > span {
 
 .picture img {
 	width: 100%;
-	height: 100%;
-  	object-fit: contain;
-  	max-width: 500px;
-  	max-height: 500px;
+	height: 100%; /* Element ajouté */
+  	object-fit: contain; /* Element ajouté */
 }
 
 #about-me {
 	flex: 2;
 }
 
-.about-me-title {
+.about-me-title { /* Classe .about-me__title remplacée par .about-me-title */
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
 
-.about-me-introduction {
+.about-me-introduction { /* Classe .about-me__introduction remplacée par .about-me-introduction */
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
 
-.about-me-describe {
+.about-me-describe { /* Ajout de la classe .about-me-describe au second élément p dans l'article #about-me */
 	width: 80%;
   }
 
-.about-me-introduction, .about-me-describe {
+.about-me-introduction, .about-me-describe { /* Classe .about-me__title remplacée par .about-me-title + Classe .about-me__introduction remplacée par .about-me-introduction */
 	font-size: 14px;
 }
 
-#gallery-section {
-	min-height: 100vh;
+#gallery-section { /* Modification de l'id #gallery en gallery-section */
+	min-height: 100vh; /* Retrait de la mise en commentaire */
 }
 
 .title{
@@ -128,13 +126,13 @@ header .name > span {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #807732;
+	background-color: #807732; /* Modification de la couleur pour améliorer le contraste */
 	border-radius: 0;
 }
 
 .nav-pills .nav-link {
 	color: #000;
-	cursor: pointer;
+	cursor: pointer; /* Element ajouté */
 }
 
 .item-column {
@@ -149,8 +147,20 @@ header .name > span {
 	padding-bottom: 100%;
 }
 
-.gallery{
-	display:none;
+.gallery{ /* Element ajouté */
+	display:none; /* Retrait de ce style du fichier html pour l'ajouter dans le css */
+}
+
+.modal-body { /* Element ajouté */
+	display: flex; /* Element ajouté */
+	justify-content: center; /* Element ajouté */
+	height: 100%;
+}
+
+.img-fluid { /* Element ajouté */
+	width: 100%; /* Element ajouté */
+    height: 100%; /* Element ajouté */
+    object-fit: cover; /* Element ajouté */
 }
 
 .gallery-item {
@@ -179,13 +189,14 @@ header .name > span {
 	padding-block: 3em;
 }
 
-.quote-text {
+.quote-text { /* Classe quote__text remplacée par .quote-text */
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 40px; /* Element ajouté */
 }
 
-.quote-author {
+.quote-author { /* Classe .quote__author remplacée par .quote-author */
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
@@ -279,29 +290,29 @@ form textarea {
 }
 input[type="submit"] {
 	background-color: #BEB45A;
-	padding: .5em 1em
+	padding: .5em 1em; /* Ajout d'un point virgule la la fin de la ligne */
 }
 
-/****** Footer ******/
+/****** Element ajouté : Footer ******/
 
-footer {
+footer { /* Element ajouté */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 15px 0;
 }
 
-footer h2 {
+footer h2 { /* Element ajouté */
 	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
 
-footer address, footer p {
+footer address, footer p { /* Element ajouté */
 	margin-bottom: 0;
 }
 
-footer address {
+footer address { /* Element ajouté */
 	margin-top: 10px;
 }
 
@@ -337,20 +348,32 @@ footer address {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me-title{
+	.about-me-title{ /* Classe .about-me__title remplacée par .about-me-title */
 		text-align: center;
 		margin-top: 1em;
 	}
+
+	.quote-text { /*Element ajouté */
+		font-size: 24px; /*Element ajouté */
+	}
+
 	#services .container {
 		flex-direction: column;
 	}
+
+	#services h2 { /* Element ajouté */
+		display: flex; /* Element ajouté */
+		justify-content: left; /* Element ajouté */
+		padding-left: 20px; /* Element ajouté */
+	}
+
 	.service {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
-		margin: 2em 0;
+		margin: 2em 0; /* Ajout d'un point virgule la la fin de la ligne */
 	}
-	.service-description{
+	.service-description{ /* Classe .service__description remplacée par .service-description */
 		margin-bottom: 1em;
 	}
 	#services .container::before{
@@ -365,12 +388,17 @@ footer address {
 	#contact .container {
 		flex-direction: column;
 	}
+
+	.form-container { /* Element ajouté */
+		width: 100%; /* Element ajouté */
+	}
+
 	#contact .picture.right {
 		margin-top: 1em;
 	}
 	.picture.right::before {
 		width: 100%;
-		height: 30%;
+		height:30%;
 		position: absolute;
 		bottom: 0;
 		right: 0;
@@ -379,25 +407,43 @@ footer address {
 }
 
 @media all and (max-width: 650px) {
-	header {
+	header { /* Suppression de la classe .top-header remplacée par la balise sémantique header */
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	header .nav, header .nav ul {
+	header .nav, header .nav ul { /* Suppression de la classe .top-header remplacée par la balise sémantique header */
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	header .nav li {
+	header .nav li { /* Suppression de la classe .top-header remplacée par la balise sémantique header */
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
 	}
+
+	#gallery-section h2 { /* Element ajouté */
+		padding: 40px 0 15px 0; /* Element ajouté */
+	}
+
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
+
+	.quote-text { /* Element ajouté */
+			font-size: 22px; /* Element ajouté */
+		}
+	
 	#services .container {
 		align-items: center;
 	}
+
+	#services h2 { /* Element ajouté */
+		width: 65%; /* Element ajouté */
+		display: flex; /* Element ajouté */
+		justify-content:left; /* Element ajouté */
+		padding-left: 15px; /* Element ajouté */
+	}
+
 	.service {
 		max-width: 90%;
 	}
@@ -410,7 +456,14 @@ footer address {
 	}
 	.picture {
 		width: 80%;
-		object-fit: cover;
+		object-fit: cover; /* Element ajouté */
 	}
+}
+
+footer { /* Element ajouté */
+	padding: 15px; /* Element ajouté */
+	display: flex; /* Element ajouté */
+	text-align: center; /* Element ajouté */
+	margin: auto; /* Element ajouté */
 }
 
