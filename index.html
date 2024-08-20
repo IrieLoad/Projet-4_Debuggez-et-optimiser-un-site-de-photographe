@@ -26,13 +26,13 @@
 	<meta name="twitter:image" content="https://irieload.github.io/Projet-4_Debuggez-et-optimiser-un-site-de-photographe/assets/images/profil/3_format-webp/nina.webp/">
 	
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"> <!-- Utilisation de la version minifiée -->
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.min.css"> <!-- Utilisation de la version minifiée -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
-	<!-- Ajout de l'attribut defer aux scripts pour différer leur chargement jusqu'à ce que le DOM soit complètement analysé, afin d'améliorer les performances de la page -->
+	<!-- Ajout de l'attribut defer aux scripts pour différer leur chargement jusqu'à ce que le DOM soit complètement traité, afin d'améliorer les performances de la page -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script> <!-- Utilisation de la version minifiée -->
 	<script src="./assets/maugallery.min.js" defer></script>
@@ -122,13 +122,13 @@
 						<img src="./assets/images/slider/4_webp-compressées/edward-cisneros_11zon.webp" class="d-block w-100" alt="Un marié incline sa femme pour l'embrasser, tandis que les invités forment une haie d'honore.">
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carousel-example-indicators" data-bs-slide="prev">
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel-example-indicators" data-bs-slide="prev" aria-label="Précédent">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
+					<!-- Remplacement du texte 'visually-hidden' par un aria-label pour résoudre les problèmes de contraste tout en conservant l'accessibilité pour les lecteurs d'écran -->
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carousel-example-indicators" data-bs-slide="next">
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel-example-indicators" data-bs-slide="next" aria-label="Suivant">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
+					<!-- Remplacement du texte 'visually-hidden' par un aria-label pour résoudre les problèmes de contraste tout en conservant l'accessibilité pour les lecteurs d'écran -->
 				</button>
 			</div>
 		</section>
@@ -143,7 +143,7 @@
 				<h2 class="about-me-title">A propos de moi : Nina Carducci</h2> <!-- Légère modification du tritre pour inclure des mots clés -->
 				<!-- Changement de <h6> en <p> -->
 				<!-- Uniformisation de la convention de nommage des class/id -->
-				<p class="about-me-introduction">Devenir photographe professionnelle était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+				<p class="about-me-introduction">Devenir <strong>photographe</strong> professionnelle était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 				<p class="about-me-describe">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose à travers ma passion pour la photographie : saisir ces merveilleux moments avec mon regard, mon expertise, et ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</article>
@@ -191,7 +191,7 @@
 				<article class="service"> <!-- Changement de la div class="service" en article -->
 					<div class="service-description"> <!-- Uniformisation de la convention de nommage des class/id -->
 						<h3>Retouches</h3>
-						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+						<p>Vous souhaitez <strong>retoucher vos photos</strong> pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 					</div>
 					<div class="service-price"> <!-- Uniformisation de la convention de nommage des class/id -->
 						<h4>50€/photo</h4>
@@ -201,7 +201,7 @@
 				<article class="service"> <!-- Changement de la div class="service" en article -->
 					<div class="service-description"> <!-- Uniformisation de la convention de nommage des class/id -->
 						<h3>Album photos</h3>
-						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un <strong>album photo</strong> personnalisé</p>
 					</div>
 					<div class="service-price"> <!-- Uniformisation de la convention de nommage des class/id -->
 						<h4>400€ album A4</h4>
